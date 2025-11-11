@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>1st program</title>
+    <style>
+      body {
+        background-color: rgb(216, 216, 216);
+        /* margin: 5px; */
+      }
+      .navbar {
+        background-color: rgb(177, 177, 177);
+        padding: 5px;
+        border-radius: 5px;
+      }
+
+      .navbar nav {
+        display: flex;
+        margin: 5px;
+        display: flex;
+        justify-content: space-between;
+      }
+      .navbar nav li {
+        margin-left: 5px;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+      }
+      .navbar nav li a {
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        margin-left: 5px;
+        margin-right: 5px;
+      }
+      .navbar nav li a:hover {
+        text-decoration: underline;
+      }
+
+      .homep {
+        border: 2px solid rgb(0, 0, 0);
+        border-radius: 5px;
+        margin-top: 10px;
+        padding: 50px;
+        display: flex;
+        justify-content: center;
+      }
+      .homep table tr th {
+        background-color: rgb(245, 245, 210);
+      }
+
+      .homep table tr td {
+        background-color: bisque;
+      }
+
+      .formpage {
+        border: 2px solid rgb(0, 0, 0);
+        border-radius: 5px;
+        margin-top: 10px;
+        padding: 5px;
+        display: flex;
+        justify-content: center;
+      }
+
+      .formpage form #submit {
+        width: 100%;
+        background-color: green;
+        border: none;
+        padding: 10px;
+        border-radius: 5px;
+      }
+      .formpage form #submit:hover {
+        cursor: pointer;
+        background-color: rgb(2, 211, 65);
+      }
+      .formpage form {
+        border: 1px solid black;
+        padding: 10px;
+      }
+      .formpage form input {
+        padding: 5px;
+        border-radius: 2px;
+        border: none;
+      }
+
+      .formsubmit {
+        border: 2px solid rgb(0, 0, 0);
+        border-radius: 5px;
+        margin-top: 10px;
+        padding: 5px;
+        display: flex;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- navbar div  -->
+    <div class="navbar">
+      <nav>
+        <li><a href="#homep">Vehicles</a></li>
+        <li><a href="">Super cars</a></li>
+        <li><a href="">Hyper cars</a></li>
+        <li><a href="">Sports car</a></li>
+      </nav>
+    </div>
+
+    <!-- form page div  -->
+    <div class="formpage">
+      <form action="" method="post">
+        <label for="name">Name : </label>
+        <input type="text" name="name" id="email" required /> <br /><br />
+
+        <label for="email">Email : </label>
+        <input type="email" name="email" id="email" required /> <br /><br />
+
+        <label for="message">Message :</label><br />
+        <textarea
+          name="message"
+          id="message"
+          rows="9"
+          cols="30"
+          required
+          style="border: none; border-radius: 5px"
+        ></textarea>
+        <br /><br />
+
+        <!-- date :<input type="date" name="" id=""> <br> -->
+
+        <input type="submit" value="Submit" id="submit" />
+      </form>
+    </div>
+
+    <!-- table div  -->
+    <div class="homep">
+      <table
+        border="1"
+        cellspacing="0"
+        cellpadding="8"
+        style="text-align: center"
+      >
+        <tr>
+          <th>Vehicle Id</th>
+          <th>Name</th>
+          <th>Origin</th>
+          <th>Price</th>
+        </tr>
+        <tr>
+          <td>100</td>
+          <td>BMW</td>
+          <td>German</td>
+          <td>120000usd</td>
+        </tr>
+        <tr>
+          <td>200</td>
+          <td>Mercedes</td>
+          <td>German</td>
+          <td>100000usd</td>
+        </tr>
+        <tr>
+          <td>300</td>
+          <td>Toyota</td>
+          <td>Japan</td>
+          <td>60000usd</td>
+        </tr>
+        <tr>
+          <td>400</td>
+          <td>Mahindra</td>
+          <td>india</td>
+          <td>20000usd</td>
+        </tr>
+        <tr>
+          <td>500</td>
+          <td>Tata</td>
+          <td>india</td>
+          <td>20000usd</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="formsubmit"></div>
+
+    <script>
+      // alert("please close the browser")
+
+      const age = parseInt(prompt("enter a number"));
+      if (age <= 100) {
+        if (age >= 18) {
+          console.log("you are eligible for vote");
+        } else {
+          console.log("not eligible");
+        }
+      } else {
+        console.log("pleae enter a valid age");
+      }
+    </script>
+  </body>
+</html>
